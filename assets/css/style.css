@@ -140,7 +140,7 @@ img {
 	flex-direction: column;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     .page-article {
         flex-direction: column;
         justify-content: center;
@@ -182,7 +182,7 @@ img {
     background: no-repeat center/cover fixed;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     .hero {
         height: 100%;
         padding: 4rem 0;
@@ -233,11 +233,19 @@ img {
     clip-path: circle(100%);
 }
 
+#menu-check:checked ~ .hero {
+    /* TODO: Find a method. */
+}
+
+#menu-checked:not(:checked) ~ body {
+    background-color: red;
+}
+
 #menu-check:not(:checked) ~ .menu-wrapper {
     top: 100vh;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     .hero--image {
         width: 100%;
         padding: 0;
@@ -301,7 +309,7 @@ figcaption {
     font-size: .3em;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 1000px) {
     .navigation__mobile {
         visibility: hidden;
     }
@@ -310,7 +318,7 @@ figcaption {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     .navigation-wrapper {
         background-color: transparent;
     }
@@ -337,7 +345,7 @@ figcaption {
     padding: 1rem;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     .container-mid-wrapper-row {
         flex-direction: column;
     }
@@ -393,7 +401,7 @@ h1 {
     border-right: 1px solid var(--colorDarkOrange);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     .article-triple-image {
         display: none;
     }
@@ -479,7 +487,7 @@ h1 {
     height: 70%;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     .user-card {
         width: 80%;
     }
@@ -620,7 +628,7 @@ li {
     margin-bottom: 2.2rem;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     .shopping-cart-wrapper {
         width: 10%;
     }
@@ -636,12 +644,12 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    height: 30em;
     position: relative;
     cursor: pointer;
     overflow: hidden;
     margin-bottom: 2em;
     overflow: hidden;
+    padding: 2rem 0;
     gap: 0;
 }
 
@@ -649,9 +657,8 @@ li {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url("/assets/images/food/eggrolls-card.jpg");
     background-size: cover;
-    background-position: cover;
+    background-position: center;
     transition: all 0.4s ease-out;
 }
 
@@ -696,6 +703,8 @@ li {
 
 .hid-box {
     display: flex;
+    flex-direction: column;
+    align-content: center;
     top: 100%;
     width: 100%;
     position: absolute;
@@ -703,6 +712,42 @@ li {
     background-color: rgba(0, 0, 0, 0.8);
     height: 100%;
     clip-path: circle(0% at 100% 100%);
+}
+
+.hid-box  p {
+    font-weight: 100;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.hid-box h3 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.food-controls {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.order-btn {
+    text-align: center;
+    border: none;
+    padding: 10px 20px;
+    color: var(--colorWhite);
+    background-color: var(--colorDarkOrange);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.order-btn:hover {
+    background-color: var(--colorLight);
+    color: var(--colorDarkOrange);
 }
 
 .food-card-info-box {
@@ -738,17 +783,17 @@ li {
 }
 
 .food-card--spicy-indicator {
-    top: .5rem;
+    top: 6rem;
     left: .5rem;
 }
 
 .food-card--star-rating {
-    top: .5rem;
+    top: 2.5rem;
     right: .5rem;
 }
 
 .food-card--protein-indicator {
-    bottom: 4.5rem;
+    top: 2.5rem;
     left: .5rem;
 }
 

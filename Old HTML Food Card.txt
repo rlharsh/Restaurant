@@ -1,0 +1,66 @@
+
+                <div class="food-card">
+                    <div class="food-card-generic-container">
+                        <div class="hid-box">
+                            <div class="hid-box--description">
+                                <p>
+                                    These delicious eggrolls are crafted
+                                    in our state of the art kitchen using
+                                    only the freshest ingredients avaialble.
+                                </p>
+                                <p>
+                                    Each order contains four eggrolls and your
+                                    choice of side-sauce.
+                                </p>
+                            </div>
+
+
+                            <div class="hid-box--calories">
+                                <h3 id="food-calories">
+                                    480kcal
+                                </h3>
+                            </div>
+
+
+
+                            <div class="food-controls">
+                                <button class="order-btn">Order Now</button>
+                                <button class="order-btn"><i class="fa-solid fa-heart"></i></button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="food-card--information--container">
+
+                        </div>
+                    </div>
+
+
+                    <div class="food-card-basic-information-container">
+                        <div class="food-card-info-box">
+                            <h3 id="food-name">Eggrolls</h3>
+                        </div>
+                        <div class="food-card-info-box align-right">
+                            <h4 id="food-price">12</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="badge food-card--spicy-indicator">
+                        <i class="fa-solid fa-pepper-hot"></i>
+                    </div>
+
+
+                    <div class="badge food-card--star-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>4.5</span>
+                    </div>
+
+                    
+                    <div class="badge food-card--protein-indicator">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                </div>
+
+
